@@ -1,0 +1,70 @@
+@charset "utf-8";
+*{
+	direction: rtl;
+	margin: 0px;
+	padding: 0px;
+}
+#top {
+display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+img[alt="zamin"]{
+	width: 700px;
+	height: 730px;
+	margin-top: 20px;
+	
+}
+img[alt="ball"]{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 100px;
+	right: 485px;
+	animation: toop 5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards
+}
+img[alt="person1"]{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 25px;
+	right: 410px;
+}
+
+
+img[alt="logo"]{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: white;
+	border-radius: 40%;
+}
+img[alt="logo"]:hover{
+	transform: scale(3);
+}
+@keyframes toop{
+	0%{
+		transform: translate(0px,0px) rotate(0deg);
+	}
+	
+	25%{
+		transform: translateX(-500px) rotate(360deg);
+	}
+	
+	50%{
+		transform: translate(-500px,550px) rotate(0deg);
+
+	}
+	75%{
+		transform: translate(0px,550px) rotate(360deg);
+	}
+	100%{
+		transform: translate(0px,0px) rotate(0deg);
+	}
+	}
+
+	
+
